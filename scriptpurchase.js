@@ -75,6 +75,11 @@ function addProductToCart(title, price, productImg){
     }
 }
 
+function addProductToCart(){
+    analytics.track("Products",{
+        product_name: ""});
+}
+    
 var cartBoxContent = `
         <img src="${productImg}" alt="" class="cart-img">
         <div class="detail-box">
